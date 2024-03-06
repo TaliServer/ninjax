@@ -4,8 +4,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400italic,500,700&amp;subset=latin" media="all">
-
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"  rel="stylesheet" />
 
@@ -41,6 +42,16 @@
         background-image: linear-gradient(to right,#5a5f6a, #5a5f6a, #787c93);
         display: flex; align-items: center; justify-content: center;
     }
+    .gradient-text {
+        background-color: #c9caff;
+        background-image: linear-gradient(45deg, #c9caff, #ffffff);
+        background-size: 100%;
+        background-repeat: repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+    }
     </style>
 {% endblock %}
 {% block content %}
@@ -48,9 +59,19 @@
 <div class="head-msg"><h1 style=" color: white;">Welcome to UnnamedMC!</h1></div>
 <div class="outer-container">
     <div class="img-container">
-        <div style="display:flex; flex-direction: column; justify-content: space-around;">
-            <div style="display: flex; flex-direction: row; justify-content: space-between"><div><h4 style="font-family: 'Open Sans', sans-serif;"><i>How did you get here?</i></h4></div></div>
-            <div><p>hello</p></div>
+        <div style="display:flex; flex-direction: column; justify-content: space-around;"><!--Two flexbox columns - one for How did you get here bit, other for section below - need how did you part and its lower text right next to each other-->
+            <div style="display:flex; flex-direction: column; justify-content: space-around;">
+                <div><h4 style="font-family: 'Open Sans', sans-serif;"><i>How did you get here?</i></h4></div>
+                <div><p class="gradient-text" style="font-family: 'Poppins', sans-serif;"><b>Welcome to UnnamedMC ––<br> a new, self-hosted server on Origins.</b></p></div>
+            </div>
+            <div style="display:flex; flex-direction: column; justify-content: space-evenly;">
+                <div><h4 style="font-family: 'Open Sans', sans-serif;">Sample text</h4></div>
+                <div><p class="gradient-text" style="font-family: 'Poppins', sans-serif;"><b>When I met ya in te summa</b></p></div>
+            </div>
+            <div style="display:flex; flex-direction: column; justify-content: space-evenly;">
+                <div><h4 style="font-family: 'Montserrat', sans-serif;"><u>Sample text</u></u></h4></div>
+                <div><p class="gradient-text" style="font-family: 'Poppins', sans-serif;"><b>Laremy Baremy, Sample text because it's past 1 in the morning</b></p></div>
+            </div>
         </div>
     </div>
 </div>
