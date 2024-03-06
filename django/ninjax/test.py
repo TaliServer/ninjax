@@ -3,7 +3,7 @@
 #
 #run server with #python3 manage.py runserver
 #
-#
+#systemctl start cloudflared
 #
 #
 #
