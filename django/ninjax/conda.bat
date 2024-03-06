@@ -1,0 +1,1 @@
+/Users/drago/anaconda3/scripts/conda.exe activate django
