@@ -28,4 +28,4 @@ jobs:
         pip install django
     - name: Run Tests
       run: |
-        python djanog/ninjax/manage.py test
+        python django/ninjax/manage.py test
