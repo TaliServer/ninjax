@@ -1,0 +1,77 @@
+{% extends "base.html" %} {% block head %}
+<title>About</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400italic,500,700&amp;subset=latin" media="all">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+    .main-container{
+        display: flex;
+
+        justify-content: center;
+    }
+    .inner-container{
+
+    }
+    .content-body {
+        font-family:"roboto"
+    }
+    .justify {
+        text-align:justify;
+    }
+    .center {
+        text-align:center;
+    }
+    .img-container{
+        width: 100%;
+        height: 768px;
+        background-position: center;
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-image: url(https://i.ibb.co/mb24m6N/512-ori-RETOUCHED-TRANSP-edit2.png);
+        background-attachment: fixed;
+
+        display: flex;
+
+        justify-content: center;
+
+        color: white;
+    }
+    .outer-container{
+        background-image: linear-gradient(to right,#5a5f6a, #5a5f6a, #787c93);
+    }
+    .head-msg{
+        background-image: linear-gradient(to right,#5a5f6a, #5a5f6a, #787c93);
+        display: flex; align-items: center; justify-content: center;
+    }
+    .gradient-text {
+        background-color: #c9caff;
+        background-image: linear-gradient(45deg, #e2e4ff, #ffffff);
+        background-size: 100%;
+        background-repeat: repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div style="display: flex; align-items: center; justify-content: center;  border-bottom-color: #727988;  border-bottom-width: 0.4em;  border-bottom-style: inset;  background-image: linear-gradient(45deg, #e2e4ff, #ffffff);"><h1 style="">Modpack and IP</h1></div>
+<div style="display:flex; flex-direction: column; justify-content: center;  background-image: linear-gradient(to right,#5a5f6a, #5a5f6a, #787c93);">
+<div class="outer-container">
+    <div style="display:flex; flex-direction: column; justify-content: space-around;  border-bottom-color: #373373;  border-bottom-width: 0.4em;  border-bottom-style: inset;">
+        <div style="display:flex; flex-direction: row; justify-content: space-around;"><span><h4 style="font-family: 'Open Sans', sans-serif; display: inline-block;">IP:</h4></span><span><h4  style="font-family: 'Open Sans', sans-serif; display: inline-block;"><i>Unnamedmc.com</i></h4></span></div>
+        <div style="align-content:center;"><p style="font-family: 'Poppins', sans-serif;">That shouldn't be too hard to remember</p></div>
+    </div>
+    <div style="display:flex; flex-direction: column; justify-content: space-around;  border-bottom-color: #373373;  border-bottom-width: 0.4em;  border-bottom-style: inset;">
+        <div style="display:flex; flex-direction: row; justify-content: space-around;"><span><h4 style="font-family: 'Open Sans', sans-serif; display: inline-block;">Modpack:</h4></span><span><h4  style="font-family: 'Open Sans', sans-serif; display: inline-block;"><i><a href="https://discord.gg/ztaqUMDEUP">Download at our discord!</a></i></h4></span></div>
+        <div style="align-content:center;"><p style="font-family: 'Poppins', sans-serif;">In-website downloading coming soon! <span style="color:#cccccc">(depending on your definition of soon)</span></p></div>
+    </div>
+</div>
+</div>
+{% endblock %}

@@ -10,3 +10,9 @@ def tut_home(request):
 
 def home(request):
     return render(request, "home.html")
+
+def ip_modpack(request):
+    return render(request, "ip-config.html")
+
+def about(request):
+    return render(request, "about.html")
